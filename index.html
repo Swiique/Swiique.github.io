@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="left">
+                <a href="#home"><button>/</button></a>
+                <a href="#about"><button>/whoami</button></a>
+                <a href="#tech"></a><button>/blog</button></a>
+            </div>       
+
+            <div class="right">
+                <a href="#discord" onclick="copydsc()"><button><i class="fab fa-discord"></i>&nbsp;&nbsp;&nbsp;<span>Paul - Swiique#7223</span></button></a>
+                <a href="#theme" class="changeTheme"><button><i id="icon" class="fas fa-sun"></i></button></a>
+            </div>
+        </nav>
+
+
+        
+        <div class="container">
+            <a onclick="openmap()"><button><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;<span>FRANCE</span></button></a>
+            <h1 class="title" id="home"><span class="one">Bonjour</span>, Je suis Paul ⚡</h1>
+            <span class="text">J'ai  <span class="text" id="age">15</span> ans  et j'habite en France. Je suis intéréssé par la culture DevOps.</span>
+            
+            <br/><br/>
+            
+            <h1 id="about">Mon&nbsp;<span class="two">Expérience</span></h1>
+            <span class="text">J'ai pu travailler sur de nombreux projets en tant qu'administrateur système et réseaux. Ces différents travaux m'ont permis d'apprendre énormement de choses et j'ai pu y rencontrer des gens extraordinaires !</span>
+        
+            <br/><br/>
+
+            <h1 id="tech">Mes&nbsp;<span class="three" >Technologies</span></h1>
+            <span class="text">J'utilise de nombreuse technologies pour me faciliter le travail lors du déployement de mes infrastructures. Je pense devoir encore progresser sur beaucoup d'outils de cette liste, mais ils sont indispensables dans mon travail.</span>
+        
+            <br/><br/><br/>
+
+            <div class="techno_wrapper">
+                <div class="techno_column">
+                    <div class="techno_row"><img id="helm" src="./assets/icons/helm-horizontal-white.svg"></div>
+                    <div class="techno_row"><img id="k8s" src="./assets/icons/kubernetes-icon-white.svg"></div>
+                </div>
+
+                <div class="techno_column">
+                    <div class="techno_row"><img id="prometheus"src="./assets/icons/prometheus-icon-white.svg"></div>
+                    <div class="techno_row"><img id="apple" src="./assets/icons/apple.svg"></div>
+                </div>
+
+                <div class="techno_column">
+                    <div class="techno_row"><img id="vagrant" src="./assets/icons/vagrant.svg"></div>
+                    <div class="techno_row"><img id="aws" src="./assets/icons/aws.svg"></div>
+                </div>
+
+                <div class="techno_column">
+                    <div class="techno_row"><img id="docker" src="./assets/icons/docker_1.svg"></div>
+                    <div class="techno_row"><img id="github" src="./assets/icons/github.svg"></div>
+                </div>
+
+                <div class="techno_column">
+                    <div class="techno_row"><img id="mongodb" src="./assets/icons/mongodb.svg"></div>
+                    <div class="techno_row"><img id="proxmox" src="./assets/icons/proxmox.svg"></div>
+                </div>
+
+                <div class="techno_column">
+                    <div class="techno_row"><img id="redis" src="./assets/icons/redis.svg"></div>
+                    <div class="techno_row"><img id="terraform" src="./assets/icons/terraform.svg"></div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+       
+
+        
+        <footer>
+            <div id="footer_wrapper" class="wrapper">
+                <span>Swiique - Paul</span>
+            </div>
+        </footer>
+
+        <div id="ball">O</div>
+
+        <script src="./scripts/handlers/cursor.js"></script>
+        <script src="./scripts/functions/old.js"></script>
+        <script src="./scripts/handlers/theme.js"></script>
+        <script src="./scripts/functions/ascii.js"></script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+:root {
+    --background-color: #030303;
+    --text-color: white;
+    --span-color: #BFBEBE;
+    --nav-color: white;
+    --button-background-color: #1D1D1D;
+    --button-hover-color: #474444;
+
+    --bonjour-gradient-color-from: #007CF0;
+    --bonjour-gradient-color-to: #00DFD8;
+
+    --experience-gradient-color-from: #7928CA;
+    --experience-gradient-color-to: #FF0080;
+
+    --techno-gradient-color-from: #FF4D4D;
+    --techno-gradient-color-to: #F9CB28;
+
+    --cursor: url("../assets/Ellipse_white.png"), auto;
+}
+
+* {
+    font-family: "Poppins";
+    color:var(--text-color);
+    text-decoration: none;
+    cursor: var(--cursor);
+    user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color:var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20% 100px 20%;
+}
+
+nav button {
+    border-radius: 9px;
+    color:  var(nav-clor);
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    
+}
+
+
+nav a {
+	z-index: 100;
+}
+
+nav button:hover, nav button *:hover {
+    background-color: var(--button-background-color);
+    border: 1px solid var(--button-hover-color);
+}
+
+nav .left {
+    display: flex;
+    gap: 15px;
+}
+
+
+.download-cv {
+    padding: 0 20% 50px 20%;
+    text-align: center;
+}
+
+
+
+.container {
+    padding: 0 20% 50px 20%;
+}
+
+.container button {
+    border-radius: 9px;
+    color: var(--nav-color);
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px transparent solid;
+    background-color: var(--button-background-color);
+    opacity: 50%;
+    
+}
+
+.container span.text{
+    font-size: 22px;
+    color: var(--span-color);
+}
+
+
+
+h1 .one {
+    background: linear-gradient(91.38deg, var(--bonjour-gradient-color-from) 0.46%, var(--bonjour-gradient-color-to) 38.49%);
+}
+
+h1 .two {
+    background: linear-gradient(91deg, var(--experience-gradient-color-from) 25.06%, var(--experience-gradient-color-to) 86.05%);
+}
+
+h1 .three {
+    background: linear-gradient(91.91deg,  var(--techno-gradient-color-from) 48.39%,  var(--techno-gradient-color-to) 110.65%);
+}
+
+h1 .one, h1 .two, h1 .three {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+h1, h1 * {
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 54px;
+}
+
+h1.title, h1.title * {
+    font-size: 45px;
+}
+
+.techno_wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.techno_wrapper .techno_column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.techno_wrapper .techno_column .techno_row img {
+    width: 50px;
+}
+
+#ball {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 300;
+    z-index: -1;
+}
+
+footer {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+footer .wrapper {
+    border-top: 2px solid #474444;
+    padding-top: 25px;
+    margin: 0px 20%;
+}

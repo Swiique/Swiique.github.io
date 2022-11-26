@@ -1,0 +1,98 @@
+:root {
+    --background-color: #030303;
+    --text-color: white;
+    --span-color: #BFBEBE;
+    --nav-color: white;
+    --button-background-color: #1D1D1D;
+    --button-hover-color: #474444;
+
+    --bonjour-gradient-color-from: #007CF0;
+    --bonjour-gradient-color-to: #00DFD8;
+
+    --experience-gradient-color-from: #7928CA;
+    --experience-gradient-color-to: #FF0080;
+
+    --techno-gradient-color-from: #FF4D4D;
+    --techno-gradient-color-to: #F9CB28;
+
+    --cursor: url("../assets/Ellipse_white.png"), auto;
+}
+
+* {
+    font-family: "Poppins";
+    color:var(--text-color);
+    text-decoration: none;
+    cursor: var(--cursor);
+    user-select: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color:var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20% 100px 20%;
+}
+
+nav button {
+    border-radius: 9px;
+    color:  var(nav-clor);
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 1px transparent solid;
+    background-color: transparent;
+    
+}
+
+
+nav a {
+	z-index: 100;
+}
+
+nav button:hover, nav button *:hover {
+    background-color: var(--button-background-color);
+    border: 1px solid var(--button-hover-color);
+}
+
+nav .left {
+    display: flex;
+    gap: 15px;
+}
+
+.container {
+    padding: 0 20% 50px 20%;
+}
+
+.container button {
+    border-radius: 9px;
+    color: var(--nav-color);
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px transparent solid;
+    background-color: var(--button-background-color);
+    opacity: 50%;
+    
+}
+
+.container span.text{
+    font-size: 30px;
+    color: var(--span-color);
+}
+
+
+h1 .title {
+    font-size: 50px;
+}
