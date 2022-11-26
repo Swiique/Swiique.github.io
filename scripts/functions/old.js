@@ -2,7 +2,7 @@ async function calc () {
 
     while(true){
 
-        const bday = new Date('7 February 2008 013:23:01 GMT');
+        const bday = new Date('7 February 2007 013:23:01 GMT');
         const ageMilliseconds = Date.now() - bday.getTime();
 
         const MILLISECOND = 1;
